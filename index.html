@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metoriarch（メトリアーク）｜何度言っても伝わらない？それ、仕組みの問題です。</title>
-  <meta name="description" content="愛知・東海圏の中小企業経営者へ。経理BPO×AI×組織改革で「人に依存しない経営体制」を構築。無料ヒアリング30分・先着10社限定。">
-  <meta name="keywords" content="経理BPO,AI業務改革,組織改革,愛知,東海,中小企業,Metoriarch,メトリアーク">
+  <title>Metoriarch（メトリアーク）｜社員に何度言っても伝わらない？それ、仕組みの問題です。</title>
+  <meta name="description" content="愛知・東海圏の中小企業経営者へ。組織改革 × AIで「人に依存しない経営体制」を構築。無料ヒアリング30分・先着10社限定。">
+  <meta name="keywords" content="組織改革,AI業務改革,経営コンサル,愛知,東海,中小企業,Metoriarch,メトリアーク">
   <meta name="author" content="Metoriarch（メトリアーク）">
   <meta name="robots" content="index, follow">
 
   <!-- OGP -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Metoriarch｜何度言っても伝わらない？それ、仕組みの問題です。">
-  <meta property="og:description" content="愛知・東海圏の中小企業へ。経理BPO×AI×組織改革で経営を変える。無料ヒアリング30分・先着10社限定。">
+  <meta property="og:description" content="愛知・東海圏の中小企業へ。組織改革 × AIで経営を変える。無料ヒアリング30分・先着10社限定。">
   <meta property="og:url" content="https://metoriarch.com/">
   <meta property="og:image" content="PROFILE_PHOTO_URL">
   <meta property="og:site_name" content="Metoriarch（メトリアーク）">
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Metoriarch｜何度言っても伝わらない？それ、仕組みの問題です。">
-  <meta name="twitter:description" content="愛知・東海圏の中小企業へ。経理BPO×AI×組織改革。無料ヒアリング先着10社限定。">
+  <meta name="twitter:description" content="愛知・東海圏の中小企業へ。組織改革 × AI。無料ヒアリング先着10社限定。">
   <meta name="twitter:image" content="PROFILE_PHOTO_URL">
 
   <!-- Canonical -->
@@ -1497,6 +1497,225 @@ blockquote, .testimonial {
   background: rgba(184,150,62,0.2);
   color: var(--navy);
 }
+
+/* ===== VISIBILITY FIXES ===== */
+
+/* Hero subtitle - was white on light bg */
+.hero-sub {
+  color: #2d3748 !important;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem) !important;
+  line-height: 1.7 !important;
+}
+
+/* Hero headline color fix */
+.hero-headline {
+  color: var(--navy) !important;
+}
+.hero-headline .g {
+  color: var(--navy) !important;
+  background: linear-gradient(transparent 60%, rgba(184,150,62,0.2) 60%) !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: var(--navy) !important;
+  background-clip: unset !important;
+}
+.hero-headline .sm {
+  color: var(--navy) !important;
+}
+
+/* Outline button - white text on light bg */
+.btn-outline, a.btn-outline {
+  color: var(--navy) !important;
+  border: 2px solid var(--navy) !important;
+  background: transparent !important;
+}
+.btn-outline:hover {
+  background: var(--navy) !important;
+  color: #fff !important;
+}
+
+/* Stats box - numbers and labels were invisible */
+.hero-stats-box, .hero-stats {
+  background: #fff !important;
+  border: 1px solid #e8e4dc !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+}
+.hero-stats .stat, .stat-item {
+  color: var(--navy) !important;
+}
+.stat .num, .stat-number, .hero-stats .num {
+  color: var(--gold) !important;
+  font-weight: 900 !important;
+  font-size: clamp(1.8rem, 5vw, 2.5rem) !important;
+}
+.stat .label, .stat-label, .hero-stats .label {
+  color: #4a5568 !important;
+  font-size: 0.8rem !important;
+}
+
+/* Trust badges text */
+.trust-bar, .trust-badges {
+  color: #4a5568 !important;
+}
+.trust-bar span, .trust-badges span, .trust-item {
+  color: #4a5568 !important;
+}
+
+/* Pain section CTA bar - navy bg with dark text */
+.pain-cta, .mid-cta {
+  background: var(--navy) !important;
+  color: #fff !important;
+  padding: 40px 20px !important;
+}
+.pain-cta h3, .pain-cta p, .mid-cta h3, .mid-cta p {
+  color: #fff !important;
+}
+
+/* Results/case cards - text was invisible */
+.case-card, .result-card {
+  color: #fff !important;
+}
+.case-card h3, .case-card h4, .result-card h3, .result-card h4 {
+  color: #fff !important;
+}
+.case-card p, .result-card p {
+  color: rgba(255,255,255,0.9) !important;
+}
+.case-tag, .result-tag, .case-card .tag {
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.5) !important;
+  background: rgba(255,255,255,0.15) !important;
+}
+
+/* Offer section details */
+#offer h2 {
+  color: var(--navy) !important;
+}
+#offer .offer-card, #offer .detail-card {
+  background: #fff !important;
+  color: var(--navy) !important;
+  border: 1px solid #e8e4dc !important;
+}
+#offer .offer-card p, #offer .detail-card p {
+  color: #4a5568 !important;
+}
+
+/* Scarcity / why 10 companies section */
+.scarcity-inner, .limit-reason {
+  color: var(--navy) !important;
+}
+
+/* Final CTA - "30分" needs to be visible */
+#final-cta .g, #final-cta .gold-text, #final-cta span.g {
+  color: var(--gold) !important;
+  -webkit-text-fill-color: var(--gold) !important;
+}
+#final-cta h2 {
+  color: #fff !important;
+}
+#final-cta p {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Final CTA trust checks */
+#final-cta .trust-check, #final-cta .check-list {
+  color: rgba(255,255,255,0.85) !important;
+}
+#final-cta .trust-check span, #final-cta .check-list span {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* Footer text */
+footer p, footer span, footer a {
+  color: rgba(255,255,255,0.7) !important;
+}
+footer .footer-links a:hover {
+  color: #fff !important;
+}
+/* ===== END VISIBILITY FIXES ===== */
+
+
+/* ===== MOBILE & LAYOUT FIXES ===== */
+
+/* Trust badges - prevent line break on "毎月5社限定" */
+.hero-badge, .badge-sm, .trust-bar .badge {
+  white-space: nowrap !important;
+  font-size: clamp(0.7rem, 2vw, 0.85rem) !important;
+}
+
+/* Stats box mobile - prevent weird number display */
+@media (max-width: 768px) {
+  .hero-stats-box, .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 16px !important;
+  }
+  .stat, .stat-item {
+    text-align: center !important;
+  }
+  .stat .num, .stat-number {
+    font-size: 1.6rem !important;
+  }
+  .stat .label, .stat-label {
+    font-size: 0.7rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Hero headline mobile */
+  .hero-headline {
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Fix paragraph orphan characters on mobile */
+  .hero-sub, .sec-lead, .pain-intro, section p {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* 5 things cards - fix orphan text */
+  .benefit-card p, .offer-item p, .get-card p {
+    word-break: keep-all !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Story section mobile center */
+  #story .sec-title {
+    text-align: center !important;
+  }
+  
+  /* Trust badge row - nowrap on mobile */
+  .trust-bar, .trust-badges-row {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    justify-content: center !important;
+  }
+  .trust-bar span, .trust-badges-row span {
+    white-space: nowrap !important;
+    font-size: 0.72rem !important;
+  }
+}
+
+/* Story section - center the title */
+#story .sec-title {
+  text-align: center !important;
+}
+#story .sec-label {
+  text-align: center !important;
+}
+#story .divider {
+  margin: 0 auto !important;
+}
+
+/* Remove the "仕組みの問題です" sm span if still present after fix 1 */
+.hero-headline .sm {
+  display: none !important;
+}
+
+/* ===== END MOBILE & LAYOUT FIXES ===== */
+
 /* ===== END WHITE THEME OVERRIDE ===== */
 
 </style>
@@ -1540,13 +1759,12 @@ blockquote, .testimonial {
     <div class="hero-badge">愛知・東海圏の中小企業経営者（年商1〜5億 ／ 従業員5〜30名）へ</div>
 
     <h1 class="hero-headline">
-      何度言っても伝わらない。<br>
-      <span class="g">それ、あなたのせいじゃないです。</span>
-      <span class="sm">仕組みの問題です。</span>
+      社員に何度言っても伝わらない。<br>
+      <span class="g">それ、仕組みの問題です。</span>
     </h1>
 
     <p class="hero-sub">
-      社員が動かない・経理が回らない・全部自分でやっている——<br>
+      社員が動かない・業務が回らない・全部自分でやっている——<br>
       それは「人材の問題」ではなく「業務設計・組織の仕組み」の問題です。<br>
       経理・組織・業務の「仕組み」を整えることで、根本から変わります。
     </p>
@@ -1587,7 +1805,7 @@ blockquote, .testimonial {
           <div class="name">加藤（代表）</div>
           <div class="role">
             元大手化粧品メーカー法人営業<br>
-            経理BPO ／ AI業務改革 ／ 組織改革コンサルタント
+            組織改革 ／ AI業務改革 ／ 経営コンサルタント
           </div>
         </div>
       </div>
@@ -1746,7 +1964,7 @@ blockquote, .testimonial {
         <div class="story-tags">
           <span class="story-tag">元大手化粧品メーカー</span>
           <span class="story-tag">法人営業 10年超</span>
-          <span class="story-tag">経理BPO</span>
+          <span class="story-tag">経営改善</span>
           <span class="story-tag">AI業務改革</span>
           <span class="story-tag">愛知・東海特化</span>
         </div>
@@ -1797,7 +2015,7 @@ blockquote, .testimonial {
             <div class="story-content">
               <div class="phase">Phase 05</div>
               <h4>Metoriarch（メトリアーク）創業</h4>
-              <p>「指標（Metrics）」と「構造（Architecture）」を組み合わせた社名に想いを込め、創業。愛知・東海圏の中小企業経営者が「人に依存しない強い経営体制」を持てるよう、経理BPO・AI・組織改革を一気通貫で提供している。</p>
+              <p>「指標（Metrics）」と「構造（Architecture）」を組み合わせた社名に想いを込め、創業。愛知・東海圏の中小企業経営者が「人に依存しない強い経営体制」を持てるよう、組織改革 × AIを一気通貫で提供している。</p>
             </div>
           </div>
 
@@ -2036,7 +2254,7 @@ blockquote, .testimonial {
 
     <div class="offer-box fade-up">
       <h3 class="offer-headline">
-        <span class="g">経理BPO × AI × 組織改革</span><br>
+        <span class="g">組織改革 × AI</span><br>
         完全無料ヒアリング（Zoom 30分）
       </h3>
 
@@ -2196,7 +2414,7 @@ blockquote, .testimonial {
       <div class="footer-brand">
         <div class="logo">Metori<em>arch</em></div>
         <p class="tagline">
-          経理BPO × AI × 組織改革<br>
+          組織改革 × AI<br>
           愛知・東海圏の中小企業経営者を支援します
         </p>
       </div>
@@ -2312,5 +2530,3 @@ blockquote, .testimonial {
 
 </body>
 </html>
-
- 
