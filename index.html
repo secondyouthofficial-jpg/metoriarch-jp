@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社員が動かない理由は、あなたのせいじゃない | Metoriarch 無料ヒアリング</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: #ffffff;
+            color: #1a2e4a;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        section {
+            padding: 48px 20px;
+        }
+        h1, h2, h3 {
+            font-weight: 900;
+            line-height: 1.4;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-left: 6px solid #e8630a;
+            padding-left: 12px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a2e4a 0%, #2a4a6a 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .hero .catchcopy {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.9;
+            margin-bottom: 12px;
+            border-left: 4px solid #e8630a;
+            padding-left: 16px;
+            text-align: left;
+            display: inline-block;
+        }
+        .hero .sub {
+            font-size: 15px;
+            margin-top: 32px;
+            line-height: 1.9;
+            opacity: 0.95;
+        }
+        .cta-button {
+            display: block;
+            background: #e8630a;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 20px 32px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 18px;
+            text-align: center;
+            margin: 32px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(232, 99, 10, 0.3);
+            transition: all 0.3s;
+        }
+        .cta-button:hover {
+            background: #d15808;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(232, 99, 10, 0.4);
+        }
+        .cta-button small {
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+        .pain-list {
+            background: #f8f9fa;
+            border-left: 6px solid #e8630a;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .pain-list li {
+            list-style: none;
+            padding: 12px 0;
+            padding-left: 28px;
+            position: relative;
+            font-weight: 700;
+            font-size: 17px;
+        }
+        .pain-list li:before {
+            content: "\00d7";
+            position: absolute;
+            left: 0;
+            color: #e8630a;
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .solution-box {
+            background: #1a2e4a;
+            color: #ffffff;
+            padding: 32px 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+            text-align: center;
+        }
+        .solution-box h3 {
+            color: #e8630a;
+            margin-bottom: 20px;
+        }
+        .solution-box p {
+            font-size: 17px;
+            line-height: 1.9;
+        }
+        .profile {
+            background: #f8f9fa;
+            padding: 32px 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+        .profile h3 {
+            color: #1a2e4a;
+            margin-bottom: 16px;
+        }
+        .profile ul {
+            list-style: none;
+        }
+        .profile li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        .profile li:before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #e8630a;
+            font-weight: 900;
+        }
+        .hearing-content {
+            margin: 24px 0;
+        }
+        .hearing-content ul {
+            list-style: none;
+            background: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+        }
+        .hearing-content li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            font-size: 16px;
+        }
+        .hearing-content li:before {
+            content: "\25cf";
+            position: absolute;
+            left: 8px;
+            color: #e8630a;
+            font-size: 20px;
+        }
+        .note {
+            background: #fff8f0;
+            border: 2px solid #e8630a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+        .note strong {
+            color: #e8630a;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .footer {
+            background: #1a2e4a;
+            color: #ffffff;
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 14px;
+        }
+        .footer p {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="catchcopy">「何度言っても伝わらない」</div>
+            <div class="catchcopy">「社員が自分で考えて動かない」</div>
+            <div class="catchcopy">「俺がいないと会社が回らない」</div>
+
+            <h1>それ、あなたのせいじゃないです。<br>仕組みの問題です。</h1>
+
+            <div class="sub">
+                愛知の経営者100名限定。<br>
+                AI×組織改革を自社で実践している加藤が、<br>
+                あなたの会社の「詰まり」を30分で見つけます。<br><br>
+                <strong>無料。押し売りなし。ヒアリングだけ。</strong>
+            </div>
+
+            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
+                無料ヒアリングに申し込む
+                <small>※30分・Zoom・無理な営業は一切なし</small>
+            </a>
+        </section>
+
+        <section>
+            <h2>こんなこと、ありませんか？</h2>
+            <div class="pain-list">
+                <ul>
+                    <li>指示を出しても、思った通りに動いてくれない</li>
+                    <li>同じミスを何度も繰り返す。なぜ覚えない？</li>
+                    <li>「分かりました」と言うけど、全然分かってない</li>
+                    <li>自分で考えて動ける人が、一人もいない</li>
+                    <li>結局、自分が全部やるハメになる</li>
+                    <li>休みの日も電話が鳴る。現場から離れられない</li>
+                </ul>
+            </div>
+
+            <p style="font-size: 17px; font-weight: 700; line-height: 1.9;">
+                年商1億を超えたあたりから、こういうことが増えていませんか？<br><br>
+                「社長の気合」だけでは、もう限界なんです。<br>
+                でも、誰もそれを教えてくれない。
+            </p>
+        </section>
+
+        <section>
+            <h2>なぜ、社員は動かないのか？</h2>
+            <p>
+                答えはシンプルです。<br>
+                <strong style="font-size: 18px; color: #e8630a;">「動ける仕組み」がないから。</strong>
+            </p>
+
+            <div class="solution-box">
+                <h3>仕組みがないと、どうなるか</h3>
+                <p>
+                    ✓ 誰が何をやるか、曖昧<br>
+                    ✓ 情報が社長の頭の中にしかない<br>
+                    ✓ ルールがあっても、守られない<br>
+                    ✓ 社員は「社長の指示待ち」になる<br><br>
+                    <strong style="color: #e8630a;">→ 社長が全部やるしかなくなる</strong>
+                </p>
+            </div>
+
+            <p style="font-size: 17px; line-height: 1.9;">
+                逆に言えば、<strong>仕組みさえあれば、社員は動きます。</strong><br><br>
+                私（加藤）は、愛知で自社にAI×組織改革を入れて、<br>
+                バックオフィスと経理を完全に仕組み化しました。<br><br>
+                その経験をもとに、<br>
+                あなたの会社の「詰まり」を30分で見つけます。
+            </p>
+
+            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
+                無料ヒアリングに申し込む
+                <small>※30分・Zoom・無理な営業は一切なし</small>
+            </a>
+        </section>
+
+        <section>
+            <h2>加藤について</h2>
+            <div class="profile">
+                <h3>Metoriarch 代表・加藤</h3>
+                <ul>
+                    <li>愛知を拠点に、AI×組織改革を実践</li>
+                    <li>バックオフィス・経理のアウトソーシングと仕組み化が専門</li>
+                    <li>「伝わらない・動かない」組織の問題を、仕組みで解決</li>
+                    <li>自社で実践した内容を、東海圏の経営者に提供中</li>
+                </ul>
+            </div>
+
+            <p style="font-size: 17px; line-height: 1.9; margin-top: 24px;">
+                私自身、社員が動かなくて悩んだ時期がありました。<br>
+                「なんで伝わらないんだ？」と、自分を責めました。<br><br>
+                でも、違ったんです。<br>
+                <strong style="color: #e8630a;">仕組みがなかっただけ。</strong><br><br>
+                だから、同じ悩みを持つ経営者の話を聞きたい。<br>
+                100人と話して、リアルな課題を集めています。
+            </p>
+        </section>
+
+        <section>
+            <h2>30分で何を話すのか？</h2>
+            <div class="hearing-content">
+                <ul>
+                    <li>今、あなたの会社で「詰まっている」ことは何か？</li>
+                    <li>社員とのコミュニケーションで、困っていることは？</li>
+                    <li>バックオフィス・経理で、時間を取られていることは？</li>
+                    <li>「社長がいないと回らない」状態から、どう抜け出すか？</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <strong>※ヒアリングだけです</strong>
+                無理な営業や、高額商品の押し売りは一切ありません。<br>
+                純粋に、あなたの課題を聞かせてください。<br>
+                その場で解決のヒントをお伝えできることもあります。
+            </div>
+        </section>
+
+        <section style="text-align: center; background: #f8f9fa; padding: 60px 20px;">
+            <h2 style="border: none; padding: 0; font-size: 26px; margin-bottom: 24px;">
+                愛知の経営者、100名限定。<br>
+                あなたの会社の「詰まり」を<br>
+                30分で見つけます。
+            </h2>
+            <p style="font-size: 17px; margin-bottom: 32px;">
+                無料。Zoom。押し売りなし。<br>
+                ヒアリングだけ。
+            </p>
+            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
+                無料ヒアリングに申し込む
+                <small>※30分・Zoom・無理な営業は一切なし</small>
+            </a>
+            <p style="font-size: 14px; color: #666; margin-top: 24px;">
+                対象：愛知・東海圏の経営者（年商1〜5億・従業員5〜30名）<br>
+                製造・建設・サービス業・士業の方を優先します
+            </p>
+        </section>
+
+        <div class="footer">
+            <p><strong>Metoriarch（メトリアーク）</strong></p>
+            <p>経理BPO × AI × 組織改革</p>
+            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">
+                &copy; 2025 Metoriarch. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
