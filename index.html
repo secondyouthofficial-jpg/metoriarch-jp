@@ -1716,6 +1716,87 @@ footer .footer-links a:hover {
 
 /* ===== END MOBILE & LAYOUT FIXES ===== */
 
+
+/* ===== ROUND 2 FIXES ===== */
+
+/* 1. Hide hero stats box (30人/100%/etc - confusing numbers) */
+.hero-stats-box {
+  display: none !important;
+}
+
+/* 2. Hide the hero-intro representative section (加藤代表 mini bio) */
+.hero-intro {
+  display: none !important;
+}
+
+/* 3. Hide Our Story section entirely (user says unnecessary) */
+#story {
+  display: none !important;
+}
+
+/* 4. Pain section CTA bar - fix text visibility on navy bg */
+.pain-cta-bar, .section-cta, [class*="pain-cta"], [class*="mid-cta"] {
+  background: var(--navy) !important;
+}
+.pain-cta-bar *, .section-cta *, [class*="pain-cta"] *, [class*="mid-cta"] * {
+  color: #fff !important;
+}
+
+/* 5. Fix orphan characters and line breaks across all sections */
+h1, h2, h3, h4, p, li, span, div {
+  word-break: keep-all !important;
+}
+
+/* 6. "毎月5社限定" badge - prevent wrapping */
+[class*="badge"] {
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+/* 7. "5つのこと" cards - fix paragraph alignment */
+.get-card, .benefit-card, .offer-item, [class*="benefit"], [class*="get-item"] {
+  text-align: left !important;
+}
+.get-card p, .benefit-card p, .offer-item p {
+  text-align: left !important;
+  line-height: 1.7 !important;
+}
+
+/* 8. Additional pain card area between pain and story - visibility fix */
+section > div[class*="cta"] {
+  color: #fff !important;
+}
+section > div[class*="cta"] h3,
+section > div[class*="cta"] p,
+section > div[class*="cta"] span {
+  color: #fff !important;
+}
+
+/* 9. Improve overall mobile text readability */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+  h1 { font-size: clamp(1.5rem, 6.5vw, 2rem) !important; }
+  h2 { font-size: clamp(1.3rem, 5vw, 1.7rem) !important; }
+  p, li { font-size: 0.92rem !important; line-height: 1.7 !important; }
+  
+  /* Tighten section padding on mobile */
+  section {
+    padding: 48px 16px !important;
+  }
+  
+  /* Story title was left-aligned */
+  .sec-title {
+    text-align: center !important;
+  }
+}
+
+/* ===== END ROUND 2 FIXES ===== */
+
 /* ===== END WHITE THEME OVERRIDE ===== */
 
 </style>
@@ -2527,6 +2608,3 @@ footer .footer-links a:hover {
   const statsBox = document.querySelector('.hero-stats-box');
   if (statsBox) statObs.observe(statsBox);
 </script>
-
-</body>
-</html>
