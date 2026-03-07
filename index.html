@@ -3,359 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社員が動かない理由は、あなたのせいじゃない | Metoriarch 無料ヒアリング</title>
+    <title>「それ、解決できますよ。」| 愛知の経営者限定・無料ヒアリング | Metoriarch 加藤</title>
+    <meta name="description" content="社員が動かない、何度言っても伝わらない、社長がいないと回らない。それ、仕組みの問題です。30人チームをリモート100%で回す加藤が、30分で解決策を提示します。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            background: #ffffff;
-            color: #1a2e4a;
-            line-height: 1.8;
-            font-size: 16px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0;
-        }
-        section {
-            padding: 48px 20px;
-        }
-        h1, h2, h3 {
-            font-weight: 900;
-            line-height: 1.4;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 24px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            border-left: 6px solid #e8630a;
-            padding-left: 12px;
-        }
-        h3 {
-            font-size: 20px;
-            margin-bottom: 16px;
-        }
-        p {
-            margin-bottom: 16px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans JP', sans-serif; background: #ffffff; color: #1a2e4a; line-height: 1.8; font-size: 16px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        section { padding: 48px 20px; }
+        h1, h2, h3 { font-weight: 900; line-height: 1.4; }
+        h1 { font-size: 28px; margin-bottom: 24px; }
+        h2 { font-size: 24px; margin-bottom: 20px; border-left: 6px solid #e8630a; padding-left: 12px; }
+        h3 { font-size: 20px; margin-bottom: 16px; }
+        p { margin-bottom: 16px; }
+
         .hero {
             background: linear-gradient(135deg, #1a2e4a 0%, #2a4a6a 100%);
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
+            color: #ffffff; text-align: center; padding: 60px 20px 48px;
         }
-        .hero h1 {
-            font-size: 26px;
-            line-height: 1.6;
-            margin-bottom: 32px;
+        .hero-catchcopy {
+            font-size: 32px; font-weight: 900; line-height: 1.4;
+            margin-bottom: 32px; color: #e8630a;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        .hero .catchcopy {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1.9;
-            margin-bottom: 12px;
-            border-left: 4px solid #e8630a;
-            padding-left: 16px;
-            text-align: left;
-            display: inline-block;
+        .hero-profile-icon {
+            width: 200px; height: 200px; border-radius: 50%;
+            margin: 0 auto 24px; border: 6px solid #e8630a;
+            background: linear-gradient(135deg, #2a4a6a, #3a5a7a);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            position: relative; overflow: hidden;
         }
-        .hero .sub {
-            font-size: 15px;
-            margin-top: 32px;
-            line-height: 1.9;
-            opacity: 0.95;
+        .hero-profile-icon svg { width: 100px; height: 100px; opacity: 0.9; }
+        .hero-profile-label {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: rgba(232, 99, 10, 0.9); padding: 6px;
+            font-size: 13px; font-weight: 700; letter-spacing: 1px;
         }
+        .hero-subtitle { font-size: 18px; font-weight: 700; line-height: 1.9; margin-bottom: 32px; }
+        .hero-stats {
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+            border-radius: 12px; padding: 24px; margin: 32px 0;
+            border: 2px solid rgba(232, 99, 10, 0.3);
+        }
+        .hero-stats-item { font-size: 15px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .hero-stats-item:last-child { border-bottom: none; }
+        .hero-stats-number { color: #e8630a; font-weight: 900; font-size: 18px; }
+
         .cta-button {
-            display: block;
-            background: #e8630a;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 20px 32px;
-            border-radius: 8px;
-            font-weight: 900;
-            font-size: 18px;
-            text-align: center;
-            margin: 32px auto;
-            max-width: 400px;
-            box-shadow: 0 4px 12px rgba(232, 99, 10, 0.3);
-            transition: all 0.3s;
+            display: block; background: #e8630a; color: #ffffff;
+            text-decoration: none; padding: 20px 32px; border-radius: 8px;
+            font-weight: 900; font-size: 18px; text-align: center;
+            margin: 32px auto; max-width: 400px;
+            box-shadow: 0 4px 12px rgba(232, 99, 10, 0.3); transition: all 0.3s;
         }
-        .cta-button:hover {
-            background: #d15808;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(232, 99, 10, 0.4);
+        .cta-button:hover { background: #d15808; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(232, 99, 10, 0.4); }
+        .cta-button small { display: block; font-size: 13px; font-weight: 400; margin-top: 8px; opacity: 0.9; }
+
+        .pain-list { background: #f8f9fa; border-left: 6px solid #e8630a; padding: 24px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+        .pain-list li { list-style: none; padding: 12px 0; padding-left: 28px; position: relative; font-weight: 700; font-size: 17px; }
+        .pain-list li:before { content: "×"; position: absolute; left: 0; color: #e8630a; font-size: 24px; font-weight: 900; }
+
+        .story-box { background: #f8f9fa; padding: 32px 24px; border-radius: 8px; margin: 32px 0; border: 3px solid #1a2e4a; }
+        .story-box h3 { color: #1a2e4a; margin-bottom: 20px; font-size: 22px; }
+        .story-box p { font-size: 16px; line-height: 1.9; }
+        .story-highlight { background: #fff8f0; border-left: 4px solid #e8630a; padding: 16px; margin: 16px 0; font-weight: 700; font-size: 17px; }
+
+        .achievement-box {
+            background: linear-gradient(135deg, #1a2e4a 0%, #2a4a6a 100%);
+            color: #ffffff; padding: 40px 24px; border-radius: 12px; margin: 32px 0;
         }
-        .cta-button small {
-            display: block;
-            font-size: 13px;
-            font-weight: 400;
-            margin-top: 8px;
-            opacity: 0.9;
-        }
-        .pain-list {
-            background: #f8f9fa;
-            border-left: 6px solid #e8630a;
-            padding: 24px;
-            margin: 24px 0;
-        }
-        .pain-list li {
-            list-style: none;
-            padding: 12px 0;
-            padding-left: 28px;
-            position: relative;
-            font-weight: 700;
-            font-size: 17px;
-        }
-        .pain-list li:before {
-            content: "\00d7";
-            position: absolute;
-            left: 0;
-            color: #e8630a;
-            font-size: 24px;
-            font-weight: 900;
-        }
-        .solution-box {
-            background: #1a2e4a;
-            color: #ffffff;
-            padding: 32px 24px;
-            border-radius: 8px;
-            margin: 32px 0;
-            text-align: center;
-        }
-        .solution-box h3 {
-            color: #e8630a;
-            margin-bottom: 20px;
-        }
-        .solution-box p {
-            font-size: 17px;
-            line-height: 1.9;
-        }
-        .profile {
-            background: #f8f9fa;
-            padding: 32px 24px;
-            border-radius: 8px;
-            margin: 32px 0;
-        }
-        .profile h3 {
-            color: #1a2e4a;
-            margin-bottom: 16px;
-        }
-        .profile ul {
-            list-style: none;
-        }
-        .profile li {
-            padding: 8px 0;
-            padding-left: 24px;
-            position: relative;
-        }
-        .profile li:before {
-            content: "\2713";
-            position: absolute;
-            left: 0;
-            color: #e8630a;
-            font-weight: 900;
-        }
-        .hearing-content {
-            margin: 24px 0;
-        }
-        .hearing-content ul {
-            list-style: none;
-            background: #f8f9fa;
-            padding: 24px;
-            border-radius: 8px;
-        }
-        .hearing-content li {
-            padding: 12px 0;
-            padding-left: 32px;
-            position: relative;
-            font-size: 16px;
-        }
-        .hearing-content li:before {
-            content: "\25cf";
-            position: absolute;
-            left: 8px;
-            color: #e8630a;
-            font-size: 20px;
-        }
-        .note {
-            background: #fff8f0;
-            border: 2px solid #e8630a;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 24px 0;
-            font-size: 15px;
-        }
-        .note strong {
-            color: #e8630a;
-            display: block;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-        .footer {
-            background: #1a2e4a;
-            color: #ffffff;
-            text-align: center;
-            padding: 32px 20px;
-            font-size: 14px;
-        }
-        .footer p {
-            margin-bottom: 8px;
+        .achievement-box h3 { color: #e8630a; margin-bottom: 24px; text-align: center; font-size: 24px; }
+        .achievement-item { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 16px; margin: 12px 0; border-radius: 8px; border-left: 4px solid #e8630a; }
+        .achievement-item strong { color: #e8630a; font-size: 18px; }
+
+        .case-study { background: #ffffff; border: 3px solid #1a2e4a; border-radius: 12px; padding: 32px 24px; margin: 24px 0; }
+        .case-study h4 { color: #e8630a; font-size: 20px; margin-bottom: 16px; font-weight: 900; }
+        .case-before { background: #fff0f0; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        .case-before h5 { color: #dc3545; font-size: 16px; margin-bottom: 8px; font-weight: 900; }
+        .case-solution { background: #f0f8ff; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        .case-solution h5 { color: #1a2e4a; font-size: 16px; margin-bottom: 8px; font-weight: 900; }
+        .case-after { background: #f0fff0; padding: 16px; border-radius: 8px; margin: 16px 0; }
+        .case-after h5 { color: #28a745; font-size: 16px; margin-bottom: 8px; font-weight: 900; }
+        .case-label { display: inline-block; background: #1a2e4a; color: #ffffff; padding: 4px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; }
+
+        .offer-box { background: #fff8f0; border: 3px solid #e8630a; padding: 32px 24px; border-radius: 12px; margin: 32px 0; }
+        .offer-box h3 { color: #1a2e4a; text-align: center; margin-bottom: 24px; }
+        .offer-list { list-style: none; margin: 24px 0; }
+        .offer-list li { padding: 12px 0; padding-left: 32px; position: relative; font-size: 16px; }
+        .offer-list li:before { content: "✓"; position: absolute; left: 0; color: #e8630a; font-weight: 900; font-size: 20px; }
+
+        .urgency-box { background: #1a2e4a; color: #ffffff; padding: 32px 24px; text-align: center; margin: 32px 0; border-radius: 12px; }
+        .urgency-box h3 { color: #e8630a; font-size: 26px; margin-bottom: 16px; }
+        .urgency-box p { font-size: 17px; line-height: 1.9; }
+
+        .footer { background: #1a2e4a; color: #ffffff; text-align: center; padding: 32px 20px; font-size: 14px; }
+        .footer p { margin-bottom: 8px; }
+
+        @media (max-width: 480px) {
+            .hero-catchcopy { font-size: 26px; }
+            h1 { font-size: 24px; }
+            h2 { font-size: 22px; }
+            .hero-profile-icon { width: 160px; height: 160px; }
+            .hero-profile-icon svg { width: 80px; height: 80px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <section class="hero">
-            <div class="catchcopy">「何度言っても伝わらない」</div>
-            <div class="catchcopy">「社員が自分で考えて動かない」</div>
-            <div class="catchcopy">「俺がいないと会社が回らない」</div>
+<div class="container">
 
-            <h1>それ、あなたのせいじゃないです。<br>仕組みの問題です。</h1>
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-catchcopy">
+            「それ、解決できますよ。」
+        </div>
 
-            <div class="sub">
-                愛知の経営者100名限定。<br>
-                AI×組織改革を自社で実践している加藤が、<br>
-                あなたの会社の「詰まり」を30分で見つけます。<br><br>
-                <strong>無料。押し売りなし。ヒアリングだけ。</strong>
+        <div class="hero-profile-icon">
+            <svg viewBox="0 0 100 100" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="35" r="20"/>
+                <ellipse cx="50" cy="85" rx="35" ry="25"/>
+            </svg>
+            <span class="hero-profile-label">Metoriarch 加藤</span>
+        </div>
+
+        <div class="hero-subtitle">
+            社員が動かない。<br>
+            何度言っても伝わらない。<br>
+            社長がいないと会社が回らない。<br><br>
+            <strong style="color: #e8630a; font-size: 20px;">それ、仕組みの問題です。</strong>
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stats-item">
+                <span class="hero-stats-number">30人</span>の女性スタッフチームを
             </div>
-
-            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
-                無料ヒアリングに申し込む
-                <small>※30分・Zoom・無理な営業は一切なし</small>
-            </a>
-        </section>
-
-        <section>
-            <h2>こんなこと、ありませんか？</h2>
-            <div class="pain-list">
-                <ul>
-                    <li>指示を出しても、思った通りに動いてくれない</li>
-                    <li>同じミスを何度も繰り返す。なぜ覚えない？</li>
-                    <li>「分かりました」と言うけど、全然分かってない</li>
-                    <li>自分で考えて動ける人が、一人もいない</li>
-                    <li>結局、自分が全部やるハメになる</li>
-                    <li>休みの日も電話が鳴る。現場から離れられない</li>
-                </ul>
+            <div class="hero-stats-item">
+                <span class="hero-stats-number">リモート100%</span>（日本×ドイツ）で
             </div>
+            <div class="hero-stats-item">
+                中間管理職<span class="hero-stats-number">1人</span>だけで回しています
+            </div>
+            <div class="hero-stats-item">
+                議事録・タスク転記<span class="hero-stats-number">ゼロ</span>の仕組み
+            </div>
+        </div>
 
-            <p style="font-size: 17px; font-weight: 700; line-height: 1.9;">
-                年商1億を超えたあたりから、こういうことが増えていませんか？<br><br>
-                「社長の気合」だけでは、もう限界なんです。<br>
-                でも、誰もそれを教えてくれない。
-            </p>
-        </section>
+        <p style="font-size: 17px; line-height: 1.9; margin-top: 24px;">
+            愛知の経営者<strong style="color: #e8630a;">先着10社限定</strong>。<br>
+            30分お話しするだけで、<br>
+            あなたの会社の「詰まり」を見つけます。<br><br>
+            <strong>無料。押し売りなし。ヒアリングだけ。</strong>
+        </p>
 
-        <section>
-            <h2>なぜ、社員は動かないのか？</h2>
-            <p>
-                答えはシンプルです。<br>
-                <strong style="font-size: 18px; color: #e8630a;">「動ける仕組み」がないから。</strong>
-            </p>
+        <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
+            今すぐ無料ヒアリングに申し込む
+            <small>※30分・Zoom・無理な営業は一切なし</small>
+        </a>
+    </section>
 
-            <div class="solution-box">
-                <h3>仕組みがないと、どうなるか</h3>
-                <p>
-                    ✓ 誰が何をやるか、曖昧<br>
-                    ✓ 情報が社長の頭の中にしかない<br>
-                    ✓ ルールがあっても、守られない<br>
-                    ✓ 社員は「社長の指示待ち」になる<br><br>
-                    <strong style="color: #e8630a;">→ 社長が全部やるしかなくなる</strong>
+    <!-- 共感パート -->
+    <section>
+        <h2>こんなこと、ありませんか？</h2>
+        <div class="pain-list">
+            <ul>
+                <li>指示を出しても、思った通りに動いてくれない</li>
+                <li>同じミスを何度も繰り返す。なぜ覚えないのか？</li>
+                <li>「分かりました」と言うけど、全然分かっていない</li>
+                <li>自分で考えて勑ける人が、一人もいない</li>
+                <li>結局、自分が全部やることになる</li>
+                <li>休みの日も電話が鳴る。現場から離れられない</li>
+                <li>月次会計が上がってこない。お金の流れが見えない</li>
+                <li>マニュアルは作ったのに、誰も見ない</li>
+                <li>採用してもすぐ辞める。離職率が高い</li>
+            </ul>
+        </div>
+        <p style="font-size: 17px; font-weight: 700; line-height: 1.9; margin-top: 32px;">
+            年商1億を超えたあたりから、こういうことが増えていませんか？<br><br>
+            「社長の気合」だけでは、もう限界なんです。<br>
+            でも、誰もそれを教えてくれません。
+        </p>
+    </section>
+
+    <!-- 加藤さんのストーリー -->
+    <section style="background: #f8f9fa;">
+        <h2>実は、私もそうでした。</h2>
+        <div class="story-box">
+            <h3>20代、大手化粧品メーカーで法人営業をしていた頃</h3>
+            <p>「仕事のコミュニケーションで大事なことが、何なのか分かりませんでした。」</p>
+            <p>今なら分かります。<br>友達とのコミュニケーションと、仕事のコミュニケーションは、<br><strong style="color: #e8630a;">英語と日本語くらい、全てが違います。</strong></p>
+            <div class="story-highlight">
+                目的がないと、仕事は進まない。<br>コミュニケーションもできない。
+            </div>
+            <p>でも、誰もそれを教えてくれませんでした。<br>社内研修も、上司も、指標も、それを噛み砕いてくれる人も、いませんでした。</p>
+            <p style="font-weight: 700; color: #dc3545; font-size: 18px;">結局、離職しました。</p>
+        </div>
+
+        <div class="story-box" style="border-color: #e8630a;">
+            <h3 style="color: #e8630a;">「あの時、こういう研修があれば」</h3>
+            <p>「こういう上司がいれば」<br>「こういう指標があれば」<br>「それを噛み砕いてくれる人がいれば」<br><br><strong style="font-size: 18px;">もっと結果を出せたに違いない。</strong></p>
+            <div class="story-highlight">
+                私も離職した側だからこそ、分かります。<br><br>
+                <strong style="color: #e8630a; font-size: 18px;">
+                「どうやったら人が辞めないのか？」<br>
+                「どうやったら社員が輝けるのか？」
+                </strong><br><br>
+                それを、生涯をかけてやりたいと思っています。
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績セクション -->
+    <section>
+        <h2>だから、仕組みを作りました。</h2>
+        <p style="font-size: 17px; line-height: 1.9;">
+            あの時の自分が欲しかったものを、全部作りました。<br>
+            それが、今のMetoriarchです。
+        </p>
+        <div class="achievement-box">
+            <h3>私が実際に回している組織</h3>
+            <div class="achievement-item"><strong>30人</strong>の女性スタッフチーム</div>
+            <div class="achievement-item"><strong>日本×ドイツ</strong> リモート100%</div>
+            <div class="achievement-item">中間管理職<strong>1人</strong>だけで運営</div>
+            <div class="achievement-item">高齢層も<strong>オンラインチャット</strong>で対応</div>
+            <div class="achievement-item">ミーティング後の<strong>タスクメモ・転記・議事録ゼロ</strong></div>
+            <div class="achievement-item">全ての情報を<strong>Notion</strong>に自動で流し込むシステム</div>
+        </div>
+        <p style="font-size: 17px; font-weight: 700; line-height: 1.9; text-align: center; margin-top: 32px;">
+            これ、全部「仕組み」です。<br>気合じゃない。根性じゃない。<br><br>
+            <span style="color: #e8630a; font-size: 20px;">仕組みがあれば、社員は動きます。</span>
+        </p>
+    </section>
+
+    <!-- 事例セクション -->
+    <section style="background: #f8f9fa;">
+        <h2>実際に解決した事例</h2>
+
+        <div class="case-study">
+            <span class="case-label">製造業・年商5億・社員20名</span>
+            <h4>月次会計が上がってこない → 積極投資できる会社に</h4>
+            <div class="case-before">
+                <h5>【Before】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✗ 経理は全員「外注」で、社長が何の情報も持っていない<br>
+                    ✗ 月次会計が上がってこない<br>
+                    ✗ 知らないところで現金がショートしていた
                 </p>
             </div>
-
-            <p style="font-size: 17px; line-height: 1.9;">
-                逆に言えば、<strong>仕組みさえあれば、社員は動きます。</strong><br><br>
-                私（加藤）は、愛知で自社にAI×組織改革を入れて、<br>
-                バックオフィスと経理を完全に仕組み化しました。<br><br>
-                その経験をもとに、<br>
-                あなたの会社の「詰まり」を30分で見つけます。
-            </p>
-
-            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
-                無料ヒアリングに申し込む
-                <small>※30分・Zoom・無理な営業は一切なし</small>
-            </a>
-        </section>
-
-        <section>
-            <h2>加藤について</h2>
-            <div class="profile">
-                <h3>Metoriarch 代表・加藤</h3>
-                <ul>
-                    <li>愛知を拠点に、AI×組織改革を実践</li>
-                    <li>バックオフィス・経理のアウトソーシングと仕組み化が専門</li>
-                    <li>「伝わらない・動かない」組織の問題を、仕組みで解決</li>
-                    <li>自社で実践した内容を、東海圏の経営者に提供中</li>
-                </ul>
+            <div class="case-solution">
+                <h5>【ご提案した内容】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ システムのエラー箃所を特定<br>
+                    ✓ 報連相が良くなる環境を整備<br>
+                    ✓ 社員教育を年間で設計<br>
+                    ✓ AI・SaaSツールの最適化<br>
+                    ✓ 紙の請求書を一切ゼロに<br>
+                    ✓ 会社をスリム化・透明化
+                </p>
             </div>
-
-            <p style="font-size: 17px; line-height: 1.9; margin-top: 24px;">
-                私自身、社員が動かなくて悩んだ時期がありました。<br>
-                「なんで伝わらないんだ？」と、自分を責めました。<br><br>
-                でも、違ったんです。<br>
-                <strong style="color: #e8630a;">仕組みがなかっただけ。</strong><br><br>
-                だから、同じ悩みを持つ経営者の話を聞きたい。<br>
-                100人と話して、リアルな課題を集めています。
-            </p>
-        </section>
-
-        <section>
-            <h2>30分で何を話すのか？</h2>
-            <div class="hearing-content">
-                <ul>
-                    <li>今、あなたの会社で「詰まっている」ことは何か？</li>
-                    <li>社員とのコミュニケーションで、困っていることは？</li>
-                    <li>バックオフィス・経理で、時間を取られていることは？</li>
-                    <li>「社長がいないと回らない」状態から、どう抜け出すか？</li>
-                </ul>
+            <div class="case-after">
+                <h5>【After】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ 現金ショートが改善<br>
+                    ✓ <strong>積極的に投資ができるようになった</strong><br>
+                    ✓ 社長が経営判断に集中できる状態に
+                </p>
             </div>
+        </div>
 
-            <div class="note">
-                <strong>※ヒアリングだけです</strong>
-                無理な営業や、高額商品の押し売りは一切ありません。<br>
-                純粋に、あなたの課題を聞かせてください。<br>
-                その場で解決のヒントをお伝えできることもあります。
+        <div class="case-study">
+            <span class="case-label">サービス業</span>
+            <h4>離職率が高い、すぐ辞める → 採用・評価の仕組み化で改善</h4>
+            <div class="case-before">
+                <h5>【Before】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✗ 教育制度・人事採用のシステムが整っていない<br>
+                    ✗ すぐ辞める、離職率が高い<br>
+                    ✗ 採用面接で「何を見るか」が曦昧<br>
+                    ✗ 中間管理職が部下の評価方法を知らない
+                </p>
             </div>
-        </section>
+            <div class="case-solution">
+                <h5>【ご提案した内容】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ 根本原因を追求（なぜ辞めるのか？）<br>
+                    ✓ 社員教育の仕組みを一から構築<br>
+                    ✓ <strong>採用基準をマニュアル化</strong><br>
+                    ✓ 会社のビジョン・方向性を言語化<br>
+                    ✓ それに結びつく評価制度を設計<br>
+                    ✓ 1on1の運用ルール設定
+                </p>
+            </div>
+            <div class="case-after">
+                <h5>【After】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ 離職率が改善<br>
+                    ✓ 採用のミスマッチが減少<br>
+                    ✓ 社員が〄育つ」環境ができた<br>
+                    ✓ 中間管理職が機能し始めた
+                </p>
+            </div>
+        </div>
 
-        <section style="text-align: center; background: #f8f9fa; padding: 60px 20px;">
-            <h2 style="border: none; padding: 0; font-size: 26px; margin-bottom: 24px;">
-                愛知の経営者、100名限定。<br>
-                あなたの会社の「詰まり」を<br>
-                30分で見つけます。
-            </h2>
-            <p style="font-size: 17px; margin-bottom: 32px;">
-                無料。Zoom。押し売りなし。<br>
-                ヒアリングだけ。
-            </p>
-            <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
-                無料ヒアリングに申し込む
-                <small>※30分・Zoom・無理な営業は一切なし</small>
-            </a>
-            <p style="font-size: 14px; color: #666; margin-top: 24px;">
-                対象：愛知・東海圏の経営者（年商1〜5億・従業員5〜30名）<br>
-                製造・建設・サービス業・士業の方を優先します
-            </p>
-        </section>
+        <div class="case-study">
+            <span class="case-label">企業・社員30名</span>
+            <h4>Microsoft 365が使えていない → 自走する組織に</h4>
+            <div class="case-before">
+                <h5>【Before】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✗ Microsoft 365を全員が持っているのに、使いこなせていない<br>
+                    ✗ ツールが「平成時代のまま」止まっている<br>
+                    ✗ マニュアルが好き放題に乱立<br>
+                    ✗ <strong>生きているマニュアルと死んでいるマニュアルが混在</strong><br>
+                    ✗ 何がどこにあるか、誰も分からない
+                </p>
+            </div>
+            <div class="case-solution">
+                <h5>【ご提案した内容】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ 生きているマニュアルと死んでいるマニュアルを精査<br>
+                    ✓ 生きているものだけを残し、全てリライト<br>
+                    ✓ 階層を整えて、誰が見ても分かる構造に<br>
+                    ✓ <strong>「マニュアルは退化する」前提の文化作り</strong><br>
+                    ✓ 社内研修を設計<br>
+                    ✓ <strong>社内キーマンを特定 → キーマンから浸透させる戦略</strong>
+                </p>
+            </div>
+            <div class="case-after">
+                <h5>【After】</h5>
+                <p style="font-size: 15px; margin: 0;">
+                    ✓ マニュアルが「生きたツール」として機能<br>
+                    ✓ 社員が自分で情報を探せるようになった<br>
+                    ✓ <strong>社長が細かい指示を出さなくても回る組織に</strong>
+                </p>
+            </div>
+        </div>
 
-        <div class="footer">
-            <p><strong>Metoriarch（メトリアーク）</strong></p>
-            <p>経理BPO × AI × 組織改革</p>
-            <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">
-                &copy; 2025 Metoriarch. All rights reserved.
+        <p style="font-size: 17px; font-weight: 700; line-height: 1.9; text-align: center; margin-top: 40px; color: #1a2e4a;">
+            これ、全部「仕組み」で解決しています。<br><br>
+            <span style="color: #e8630a; font-size: 20px;">あなたの会社にも、必ず「詰まり」があります。</span>
+        </p>
+
+        <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button">
+            30分で「詰まり」を見つける
+            <small>※無料・Zoom・押し売りなし</small>
+        </a>
+    </section>
+
+    <!-- オファーセクション -->
+    <section>
+        <h2>30分で何をお話しするのか？</h2>
+        <div class="offer-box">
+            <h3>このヒアリングで得られるもの</h3>
+            <ul class="offer-list">
+                <li>あなたの会社の「詰まり」がどこにあるか、明確になります</li>
+                <li>社員が動かない「本当の理由」が分かります</li>
+                <li>仕組み化すべき場所が見えます</li>
+                <li>AI・SaaSツールの「課金すべき場所」が分かります</li>
+                <li>その場で、具体的な解決策を1つ提示します</li>
+            </ul>
+            <p style="text-align: center; font-weight: 700; font-size: 18px; margin-top: 24px; color: #1a2e4a;">
+                お話しするだけで、次の一手が見えます。
             </p>
         </div>
+
+        <div style="background: #fff0f0; border: 2px solid #e8630a; padding: 20px; border-radius: 8px; margin: 24px 0;">
+            <p style="font-weight: 700; font-size: 16px; margin: 0;">
+                ※ヒアリングだけです。<br>
+                無理な営業や、高額商品の押し売りは一切ありません。<br>
+                純粋に、あなたの課題を聞かせてください。
+            </p>
+        </div>
+
+        <h3 style="margin-top: 48px; font-size: 22px;">ヒアリングの流れ</h3>
+        <div style="background: #f8f9fa; padding: 24px; border-radius: 8px; margin: 16px 0;">
+            <p style="margin: 0; line-height: 2;">
+                <strong>① Googleフォームから申込</strong><br>
+                <strong>② 日程調整（メールでご連絡します）</strong><br>
+                <strong>③ Zoomで30分ヒアリング</strong><br>
+                <strong>④ その場で、具体策を1つ提示</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- 限定性セクション -->
+    <section style="background: #f8f9fa;">
+        <div class="urgency-box">
+            <h3>愛知の経営者、先着10社限定。</h3>
+            <p>
+                年商1〜5億円<br>
+                従業員5〜30名<br>
+                製造・建設・サービス業・士業<br><br>
+                <strong style="font-size: 20px;">
+                この条件に当てはまる経営者だけ、<br>
+                先着10社限定でお話を聞きます。
+                </strong>
+            </p>
+        </div>
+        <p style="font-size: 17px; line-height: 1.9; text-align: center; margin-top: 32px;">
+            なぜ限定するのか？<br><br>
+            理由は簡単です。<br>
+            <strong style="color: #e8630a;">この規模の経営者が、一番「詰まる」場所を知っているからです。</strong><br><br>
+            年商1億を超えたあたりから、<br>
+            社長の気合だけでは回らなくなります。<br><br>
+            でも、誰もその解決策を教えてくれません。<br><br>
+            だから、私がお話を聞きます。
+        </p>
+    </section>
+
+    <!-- 最終CTA -->
+    <section style="text-align: center; padding: 60px 20px;">
+        <h2 style="border: none; padding: 0; font-size: 28px; margin-bottom: 32px; text-align: center;">
+            「それ、解決できますよ。」
+        </h2>
+
+        <div class="hero-profile-icon" style="width: 160px; height: 160px; border-width: 4px; margin: 0 auto 24px;">
+            <svg viewBox="0 0 100 100" fill="white" xmlns="http://www.w3.org/2000/svg" style="width: 80px; height: 80px;">
+                <circle cx="50" cy="35" r="20"/>
+                <ellipse cx="50" cy="85" rx="35" ry="25"/>
+            </svg>
+            <span class="hero-profile-label">Metoriarch 加藤</span>
+        </div>
+
+        <p style="font-size: 17px; line-height: 1.9; margin-bottom: 32px;">
+            社員が動かない。<br>
+            何度言っても伝わらない。<br>
+            社長がいないと回らない。<br><br>
+            <strong style="color: #e8630a; font-size: 20px;">それ、仕組みの問題です。</strong><br><br>
+            30分お話しするだけで、解決策が見えます。<br>
+            無料。Zoom。押し売りなし。
+        </p>
+
+        <a href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform" class="cta-button" style="font-size: 20px; padding: 24px 40px;">
+            今すぐ無料ヒアリングに申し込む
+            <small>※30分・Zoom・無理な営業は一切なし</small>
+        </a>
+        <p style="font-size: 14px; color: #666; margin-top: 24px;">
+            対象：愛知・東海圏の経営者（年商1〜5億・従業員5〜30名）<br>
+            製造・建設・サービス業・士業の方を優先します
+        </p>
+    </section>
+
+    <!-- フッター -->
+    <div class="footer">
+        <p><strong>Metoriarch（メトリアーク）</strong></p>
+        <p>経理BPO × AI × 組織改革</p>
+        <p>代表：加藤</p>
+        <p style="margin-top: 16px; font-size: 13px; opacity: 0.8;">
+            © 2025-2026 Metoriarch. All rights reserved.
+        </p>
     </div>
+</div>
 </body>
 </html>
