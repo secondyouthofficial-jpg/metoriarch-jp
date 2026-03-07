@@ -1298,7 +1298,208 @@
       .footer-top { flex-direction: row; justify-content: space-between; align-items: flex-start; }
       .footer-bottom { flex-direction: row; justify-content: space-between; }
     }
-  </style>
+  
+/* ===== WHITE THEME OVERRIDE ===== */
+:root {
+  --navy: #1a2744;
+  --gold: #b8963e;
+  --gold-light: #d4b96a;
+  --white: #ffffff;
+  --cream: #faf8f5;
+  --text-dark: #1a2744;
+}
+
+body {
+  background: #fff !important;
+  color: var(--text-dark) !important;
+}
+
+header {
+  background: rgba(255,255,255,0.97) !important;
+  border-bottom: 1px solid #e8e4dc !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+header .logo {
+  color: var(--navy) !important;
+}
+
+header nav a {
+  color: var(--navy) !important;
+}
+
+#hero {
+  background: linear-gradient(160deg, #ffffff 0%, #faf8f5 40%, #f5f0e8 100%) !important;
+  color: var(--navy) !important;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(1px 1px at 20% 30%, rgba(184,150,62,0.3), transparent),
+    radial-gradient(1px 1px at 60% 20%, rgba(184,150,62,0.2), transparent),
+    radial-gradient(1px 1px at 80% 60%, rgba(184,150,62,0.25), transparent),
+    radial-gradient(1px 1px at 40% 80%, rgba(184,150,62,0.15), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+#hero h1, #hero h2, #hero p, #hero .hero-subtitle, #hero .hero-lead {
+  color: var(--navy) !important;
+}
+
+#hero .hero-badge, #hero .badge {
+  background: rgba(184,150,62,0.12) !important;
+  color: var(--gold) !important;
+  border: 1px solid rgba(184,150,62,0.3) !important;
+}
+
+.section-badge, .badge {
+  background: rgba(184,150,62,0.1) !important;
+  color: var(--gold) !important;
+  border: 1px solid rgba(184,150,62,0.25) !important;
+}
+
+section {
+  background: #fff !important;
+  color: var(--navy) !important;
+}
+
+section:nth-child(even) {
+  background: var(--cream) !important;
+}
+
+section h2, section h3, section h4 {
+  color: var(--navy) !important;
+}
+
+section p, section li, section span {
+  color: #2d3748 !important;
+}
+
+.pain-card, .card {
+  background: #fff !important;
+  border: 1px solid #e8e4dc !important;
+  box-shadow: 0 2px 12px rgba(26,39,68,0.06) !important;
+  color: var(--navy) !important;
+}
+
+.pain-card:hover, .card:hover {
+  border-color: var(--gold) !important;
+  box-shadow: 0 4px 20px rgba(184,150,62,0.12) !important;
+}
+
+.pain-card h3, .card h3, .pain-card h4, .card h4 {
+  color: var(--navy) !important;
+}
+
+.pain-card p, .card p {
+  color: #4a5568 !important;
+}
+
+.story-phase, .timeline-item {
+  background: #fff !important;
+  border: 1px solid #e8e4dc !important;
+  color: var(--navy) !important;
+}
+
+.phase-number, .timeline-number {
+  background: var(--gold) !important;
+  color: #fff !important;
+}
+
+.btn-gold, .cta-button, a.btn-gold {
+  background: var(--navy) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(26,39,68,0.3) !important;
+}
+
+.btn-gold:hover, .cta-button:hover {
+  background: #243456 !important;
+  box-shadow: 0 6px 20px rgba(26,39,68,0.4) !important;
+}
+
+.btn-outline {
+  border: 2px solid var(--navy) !important;
+  color: var(--navy) !important;
+  background: transparent !important;
+}
+
+.gold-line, .accent-line, .section-line {
+  background: linear-gradient(90deg, var(--gold), var(--gold-light)) !important;
+}
+
+#final-cta, .final-cta {
+  background: linear-gradient(135deg, var(--navy) 0%, #243456 100%) !important;
+  color: #fff !important;
+}
+
+#final-cta h2, #final-cta p, .final-cta h2, .final-cta p {
+  color: #fff !important;
+}
+
+footer {
+  background: var(--navy) !important;
+  color: rgba(255,255,255,0.7) !important;
+}
+
+.number, .stat-number, .metric {
+  color: var(--gold) !important;
+}
+
+.icon, .emoji-icon {
+  filter: none !important;
+}
+
+.trust-badge, .guarantee-badge {
+  background: #fff !important;
+  border: 1px solid #e8e4dc !important;
+  color: var(--navy) !important;
+}
+
+blockquote, .testimonial {
+  background: var(--cream) !important;
+  border-left: 4px solid var(--gold) !important;
+  color: var(--navy) !important;
+}
+
+.faq-item {
+  background: #fff !important;
+  border: 1px solid #e8e4dc !important;
+  color: var(--navy) !important;
+}
+
+.faq-question {
+  color: var(--navy) !important;
+}
+
+.comparison-table th {
+  background: var(--navy) !important;
+  color: #fff !important;
+}
+
+.comparison-table td {
+  background: #fff !important;
+  color: var(--navy) !important;
+  border-color: #e8e4dc !important;
+}
+
+::selection {
+  background: rgba(184,150,62,0.2);
+  color: var(--navy);
+}
+/* ===== END WHITE THEME OVERRIDE ===== */
+
+</style>
 </head>
 <body>
 
@@ -1317,12 +1518,12 @@
 <header>
   <div class="logo">
     Metori<em>arch</em>
-    <small>経理BPO × AI × 組織改革</small>
+    <small>経理 × 仕組み × 組織改革</small>
   </div>
   <a class="hdr-cta"
      href="https://docs.google.com/forms/d/1BKhsncp0gkExlcWVT0YeIKrquBHMcp_zuHkOFyDl5q4/viewform"
      target="_blank" rel="noopener noreferrer">
-    🎯 無料相談（残席わずか）
+    🎯 まず話してみる
   </a>
 </header>
 
@@ -1347,7 +1548,7 @@
     <p class="hero-sub">
       社員が動かない・経理が回らない・全部自分でやっている——<br>
       それは「人材の問題」ではなく「業務設計・組織の仕組み」の問題です。<br>
-      経理BPO × AI × 組織改革の一気通貫で、根本から解決します。
+      経理・組織・業務の「仕組み」を整えることで、根本から変わります。
     </p>
 
     <div class="hero-cta-group">
@@ -1361,7 +1562,7 @@
     </div>
 
     <div class="hero-limit">
-      <span class="badge-red">残席わずか</span>
+      <span class="badge-red">毎月5社限定</span>
       先着10社限定 ／ Zoom対応 ／ 押し売り一切なし
     </div>
 
@@ -1850,7 +2051,7 @@
         <li class="offer-item">
           <div class="offer-icon">🖥️</div>
           <div class="offer-text">
-            <strong>Zoom完全対応・移動不要</strong>
+            <strong>オンラインで気軽に</strong>
             <span>愛知・岐阜・三重・静岡など東海全域OK</span>
           </div>
         </li>
@@ -1911,7 +2112,7 @@
 <section id="urgency">
   <div class="urgency-inner">
     <div class="urgency-badge fade-up">
-      🔔 先着10社限定 ／ 残席わずか
+      🔔 先着10社限定 ／ 毎月5社限定
     </div>
     <h2 class="urgency-title fade-up">
       なぜ<span class="g">「先着10社」</span>なのか？
@@ -2111,3 +2312,5 @@
 
 </body>
 </html>
+
+ 
