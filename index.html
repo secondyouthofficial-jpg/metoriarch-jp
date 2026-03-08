@@ -1799,6 +1799,24 @@ section > div[class*="cta"] span {
 
 /* ===== END WHITE THEME OVERRIDE ===== */
 
+
+/* ===== ROUND 2 FIXES ===== */
+.hero-stats-box { display: none !important; }
+.hero-profile-stats { display: none !important; }
+#story { display: none !important; }
+.pain-cta-bar, .pain-cta-bar *, .section-cta, .section-cta *, [class*="pain-cta"] *, [class*="mid-cta"] * { color: #fff !important; }
+#final-cta .checklist, #final-cta .checklist *, #final-cta .check-item, #final-cta .check-item * { color: #fff !important; opacity: 1 !important; }
+#final-cta .check-item span { color: rgba(255,255,255,0.95) !important; font-size: 0.95rem !important; }
+h1, h2, h3, h4, p, li, span, div { word-break: keep-all !important; }
+[class*="badge"] { white-space: nowrap !important; display: inline-flex !important; }
+.get-card p, .benefit-card p, .offer-item p { text-align: left !important; line-height: 1.7 !important; }
+.hero-sub-details, .hero-sub-details * { color: var(--navy) !important; opacity: 1 !important; }
+@media (max-width: 768px) {
+  body { font-size: 15px !important; line-height: 1.7 !important; }
+  section { padding: 48px 16px !important; }
+  .sec-title { text-align: center !important; }
+}
+
 </style>
 </head>
 <body>
@@ -2605,6 +2623,6 @@ section > div[class*="cta"] span {
       statObs.unobserve(entry.target);
     });
   }, { threshold: 0.5 });
-  const statsBox = document.querySelector('.hero-stats-box');
+  const statsBox = docment.querySelector('.hero-stats-box');
   if (statsBox) statObs.observe(statsBox);
 </script>
